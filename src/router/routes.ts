@@ -2,9 +2,14 @@ import type { RouteRecordRaw } from "vue-router";
 
 export const routes: RouteRecordRaw[] = [
     {
-        path: "/component",
-        name: "header",
-        component: () => import("@/components/Header.vue"),
+        path: "/menu",
+        name: "menu",
+        component: () => import("@/views/MenuView.vue"),
+    },
+    {
+        path: "/recipe/:id",
+        name: "recipe",
+        component: () => import("@/views/RecipeView.vue")
     },
     {
         path: "/",

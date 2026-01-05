@@ -1,11 +1,12 @@
 <template>
-  <router-link to="/" class="app-header__brand">
-    DrinkRecipes
-  </router-link>
+  <v-app-bar app>
+    <v-btn variant="text" to="/" router>DrinkRecipes</v-btn>
 
-  <v-btn text to="/" class="app-header__nav-item" router> Home </v-btn>
-  <v-btn text to="/page1" class="app-header__nav-item" router> Page 1 </v-btn>
-  <v-btn text to="/page2" class="app-header__nav-item" router> Page 2 </v-btn>
+    <v-btn variant="text" to="/" router>Home</v-btn>
+    <v-btn variant="text" to="/menu" router>Menu</v-btn>
+    <v-spacer />
+    <v-text-field v-model="searchQuery" density="compact" hide-details placeholder="Search" @keyup.enter="onSearch"/>
+  </v-app-bar>
 </template>
 
 <script lang="ts">
@@ -16,26 +17,19 @@ export default defineComponent({
 
   data() {
     return {
-      searchQuery: "" as string,
+      searchQuery: "",
     };
   },
 
   methods: {
+    onSearch(): void {
+      if (!this.searchQuery.trim()) return;
+
+      this.$router.push({
+        name: "search",
+        query: { q: this.searchQuery },
+      });
+    },
   },
 });
 </script>
-
-/*remove later*/
-<style scoped>
-.app-header__brand {
-  font-weight: 600;
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: inherit;
-  margin-right: 16px;
-}
-.app-header__nav-item {
-  text-transform: none;
-  font-weight: 500;
-}
-</style>
