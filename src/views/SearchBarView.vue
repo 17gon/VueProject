@@ -7,9 +7,8 @@ export default defineComponent({
 </script>
 
 <template>
-
+  <div>
+    <h1>Search</h1>
+    <p>Query: {{ $route.query.q }}</p>
+  </div>
 </template>
-
-<style scoped>
-
-</style>

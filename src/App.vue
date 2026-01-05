@@ -1,11 +1,25 @@
-<script setup lang="ts"></script>
+<script lang="ts">
+import { defineComponent } from "vue";
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+
+export default defineComponent({
+  name: "App",
+  components: {
+    Header,
+    Footer
+  },
+});
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-</template>
+  <v-app>
+    <Header/>
 
-<style scoped></style>
+    <v-main>
+      <router-view />
+    </v-main>
+
+    <Footer />
+  </v-app>
+</template>
