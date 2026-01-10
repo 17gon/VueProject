@@ -29,4 +29,14 @@ export const routes: RouteRecordRaw[] = [
             title: "Search recipes",
         },
     },
+    {
+        path: "/new/ingredient",
+        name: "new-ingredient",
+        component: () => import("@/views/IngredientManagerView.vue"),
+    },
+    {
+        path: "/new/recipe",
+        name: "new-recipe",
+        component: () => import("@/views/RecipeManagerView.vue"),
+    }
 ];

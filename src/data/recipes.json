@@ -1,8 +1,60 @@
 [
   {
-    "id": "mojito",
-    "name": "Mojito",
-    "shortDescription": "Refreshing mint cocktail",
-    "image": "/images/mojito.jpg"
+    "id": "058d10a8-a697-4aba-830e-91cf3eba8cbf",
+    "name": "Negroni",
+    "instructions": "Fill a mixing glass (or rocks glass) with ice.\nPour in the gin, Campari, and sweet vermouth.\nStir gently until well-chilled (do not shake).\nStrain into a rocks glass over fresh ice.\nGarnish with an orange slice or twist.",
+    "image": "https://assets.bonappetit.com/photos/626710f327b006dd474788c9/1%3A1/w_2560%2Cc_limit/0425-negroni-recipe.jpg",
+    "inputs": [
+      {
+        "componentType": "ingredient",
+        "componentId": "9f60e4bd-eb2f-4e56-97fc-5cd72845263f",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "componentType": "ingredient",
+        "componentId": "5e283fc0-d026-4bcb-aeec-dd4883e5f706",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "componentType": "ingredient",
+        "componentId": "0c7d7f3f-d9f8-4c1d-89bc-af4524aa28ed",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "componentType": "ingredient",
+        "componentId": "80e8f392-3a05-4c20-a7fc-3b827730f01e",
+        "amount": 100,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "409e37a6-ad59-41ca-b2da-dbe5435a7149",
+    "name": "Gin & Tonic",
+    "instructions": "Fill a highball glass with ice.\nPour in the gin.\nTop with tonic water.\nGarnish with a lime wedge and stir gently.",
+    "image": "",
+    "inputs": [
+      {
+        "componentType": "ingredient",
+        "componentId": "9f60e4bd-eb2f-4e56-97fc-5cd72845263f",
+        "amount": 56.7,
+        "unit": "g"
+      },
+      {
+        "componentType": "ingredient",
+        "componentId": "991cbfa5-e51a-4260-8a87-a552958cb71c",
+        "amount": 113.4,
+        "unit": "g"
+      },
+      {
+        "componentType": "ingredient",
+        "componentId": "955594e6-ca05-4d7e-8b23-3205a5ebedbe",
+        "amount": 1,
+        "unit": "unit"
+      }
+    ]
   }
 ]

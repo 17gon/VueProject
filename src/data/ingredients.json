@@ -1,0 +1,77 @@
+[
+  {
+    "id": "9c1a0f7e-8d0e-4db6-9eb1-1c8f8e9b77a1",
+    "name": "Vodka",
+    "description": "Neutral distilled spirit"
+  },
+  {
+    "id": "31d40f54-2c10-41c6-9d2a-4f4980af19b3",
+    "name": "Lime Juice",
+    "description": "Freshly squeezed lime"
+  },
+  {
+    "id": "dc79d1bc-1110-4faa-a2d3-187eb06c6b36",
+    "name": "water",
+    "description": "regular plain water, mostly clean"
+  },
+  {
+    "id": "80e8f392-3a05-4c20-a7fc-3b827730f01e",
+    "name": "Ice",
+    "description": "Ice"
+  },
+  {
+    "id": "9f60e4bd-eb2f-4e56-97fc-5cd72845263f",
+    "name": "Gin",
+    "description": "Gin"
+  },
+  {
+    "id": "5e283fc0-d026-4bcb-aeec-dd4883e5f706",
+    "name": "Campari",
+    "description": "Campari"
+  },
+  {
+    "id": "0c7d7f3f-d9f8-4c1d-89bc-af4524aa28ed",
+    "name": "Sweet red vermouth",
+    "description": "Sweet red vermouth"
+  },
+  {
+    "id": "89cbbde3-dba5-49d0-9ed2-fbc27ea9bad4",
+    "name": "Tequila",
+    "description": "Tequila"
+  },
+  {
+    "id": "75f2d1f7-e61b-45ad-81f7-62837b96f686",
+    "name": "orange liqueur",
+    "description": "orange liqueur"
+  },
+  {
+    "id": "4fa81df9-9e2f-4f07-bec4-24e38f672574",
+    "name": "Salt",
+    "description": "Salt"
+  },
+  {
+    "id": "f0effc4b-a4ea-41bb-85e6-549da0547fd0",
+    "name": "White rum",
+    "description": "White rum"
+  },
+  {
+    "id": "59059897-13d8-4580-8314-5e76690f4ee2",
+    "name": "Mint leaves",
+    "description": "Mint leaves"
+  },
+  {
+    "id": "58c91fb4-5d63-446b-b0f0-b583c77e8e6e",
+    "name": "Soda water",
+    "description": "Soda water"
+  },
+  {
+    "id": "991cbfa5-e51a-4260-8a87-a552958cb71c",
+    "name": "Tonic water",
+    "description": "Tonic water"
+  },
+  {
+    "id": "955594e6-ca05-4d7e-8b23-3205a5ebedbe",
+    "name": "Lime wedge",
+    "description": "Lime wedge"
+  }
+]
