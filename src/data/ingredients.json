@@ -73,5 +73,25 @@
     "id": "955594e6-ca05-4d7e-8b23-3205a5ebedbe",
     "name": "Lime wedge",
     "description": "Lime wedge"
+  },
+  {
+    "id": "7926edc1-47ed-4608-9124-204b8ec1e619",
+    "name": "Coffee liqueur",
+    "description": "Coffee liqueur"
+  },
+  {
+    "id": "79a9eb67-4d88-47d1-a558-7d9fecb74b32",
+    "name": "Irish cream liqueur",
+    "description": "Irish cream liqueur"
+  },
+  {
+    "id": "00fc1659-c66f-405b-b15e-4a08730ee6c1",
+    "name": "Heavy cream",
+    "description": "Heavy cream"
+  },
+  {
+    "id": "7e94adea-3a34-49dc-989b-e860efb0ad8e",
+    "name": "Milk",
+    "description": "Milk"
   }
 ]

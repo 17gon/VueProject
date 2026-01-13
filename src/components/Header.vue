@@ -1,9 +1,9 @@
 <template>
   <v-app-bar app>
-    <v-btn variant="text" to="/" router>DrinkRecipes</v-btn>
 
     <v-btn variant="text" to="/" router>Home</v-btn>
     <v-btn variant="text" to="/menu" router>Menu</v-btn>
+    <v-btn variant="text" to="/creator" router>Create</v-btn>
     <v-spacer />
     <v-text-field v-model="searchQuery" density="compact" hide-details placeholder="Search" @keyup.enter="onSearch"/>
   </v-app-bar>

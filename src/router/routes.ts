@@ -1,4 +1,5 @@
 import type { RouteRecordRaw } from "vue-router";
+import {useRecipeBuilder} from "@/stores/useRecipeBuilder.ts";
 
 export const routes: RouteRecordRaw[] = [
     {
@@ -30,13 +31,26 @@ export const routes: RouteRecordRaw[] = [
         },
     },
     {
-        path: "/new/ingredient",
-        name: "new-ingredient",
-        component: () => import("@/views/IngredientManagerView.vue"),
+        path: "/creator",
+        component: () => import("@/views/CreateView.vue"),
+        children: [
+            {
+                path: "ingredient",
+                name: "create-ingredient",
+                component: () => import("@/views/IngredientManagerView.vue"),
+            },
+            {
+                path: "recipe",
+                name: "create-recipe",
+                component: () => import("@/views/RecipeManagerView.vue"),
+                beforeEnter: () => {
+                    const store = useRecipeBuilder()
+                    store.ensureCleanState()
+                    return true
+                }
+
+            }
+
+        ]
     },
-    {
-        path: "/new/recipe",
-        name: "new-recipe",
-        component: () => import("@/views/RecipeManagerView.vue"),
-    }
 ];

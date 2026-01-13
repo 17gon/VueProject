@@ -41,19 +41,59 @@
         "componentType": "ingredient",
         "componentId": "9f60e4bd-eb2f-4e56-97fc-5cd72845263f",
         "amount": 56.7,
-        "unit": "g"
+        "unit": "ml"
       },
       {
         "componentType": "ingredient",
         "componentId": "991cbfa5-e51a-4260-8a87-a552958cb71c",
         "amount": 113.4,
-        "unit": "g"
+        "unit": "ml"
       },
       {
         "componentType": "ingredient",
         "componentId": "955594e6-ca05-4d7e-8b23-3205a5ebedbe",
         "amount": 1,
         "unit": "unit"
+      }
+    ]
+  },
+  {
+    "id": "6eb17383-20d7-4c1b-b9f8-3f82e4baf26b",
+    "name": "Black Russian",
+    "instructions": "Fill a rocks glass with ice.\nPour vodka and coffee liqueur over the ice.\nStir gently.",
+    "image": "https://www.liquor.com/thmb/XaemNm2tsS18tTHJYsY_gngs0oo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2017__12__20073201__white-russian-720x720-article-cbe4b9a832c64f8da0bb09407caefa7f.jpg",
+    "inputs": [
+      {
+        "componentType": "ingredient",
+        "componentId": "9c1a0f7e-8d0e-4db6-9eb1-1c8f8e9b77a1",
+        "amount": 56.7,
+        "unit": "g"
+      },
+      {
+        "componentType": "ingredient",
+        "componentId": "7926edc1-47ed-4608-9124-204b8ec1e619",
+        "amount": 28.35,
+        "unit": "oz"
+      },
+      {
+        "componentType": "ingredient",
+        "componentId": "80e8f392-3a05-4c20-a7fc-3b827730f01e",
+        "amount": 5,
+        "unit": "unit"
+      }
+    ]
+  },
+  {
+    "id": "d7beaf97-3159-44f5-98d0-149ecf0f3fb3",
+    "name": "White Russian",
+    "instructions": "Prepare a Black Russian in a rocks glass (vodka + coffee liqueur + ice).\nSlowly float heavy cream or milk over the back of a spoon so it rests on top.\nStir lightly before drinking (optional).",
+    "image": "",
+    "inputs": [
+      {
+        "componentType": "ingredient",
+        "componentId": "00fc1659-c66f-405b-b15e-4a08730ee6c1",
+        "amount": 28.35,
+        "unit": "g"
       }
     ]
   }
