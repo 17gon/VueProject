@@ -19,15 +19,11 @@ export default defineComponent({
     const { inputs } = storeToRefs(builderStore)
     const { recipes, ingredients } = storeToRefs(recipesStore)
 
-    function updateInputs(val: typeof inputs.value) {
-      inputs.value = val
-    }
-
     return {
       inputs,
       recipes,
       ingredients,
-      updateInputs
+      builderStore
     }
   }
 })
@@ -40,10 +36,9 @@ export default defineComponent({
         <RecipeFormCard />
 
         <RecipeInputCard
-            :inputs="inputs"
+            :inputs="builderStore.inputs"
             :ingredients="ingredients"
             :recipes="recipes"
-            @update:inputs="updateInputs"
         />
 
         <!-- Step 3: Actions -->

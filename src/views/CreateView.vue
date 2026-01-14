@@ -55,10 +55,3 @@ export default defineComponent({
     <router-view />
   </v-container>
 </template>
-
-<style scoped>
-.v-btn {
-  height: 120px;
-  font-size: 1.5rem;
-}
-</style>

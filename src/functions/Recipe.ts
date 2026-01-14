@@ -1,3 +1,5 @@
+import type {Ingredient} from "@/functions/Utils.ts";
+
 export type UUID = string
 
 export type Unit =
@@ -40,4 +42,28 @@ export interface RecipeAbout {
     id: UUID;
     name: string;
     image: string;
+}
+
+export function resolveRecipeInputs(
+    recipe: Recipe,
+    recipes: Recipe[],
+    ingredients: Ingredient[],
+    depth = 0,
+    maxDepth = 16
+): any[] {
+    if (depth > maxDepth) return []
+
+    return recipe.inputs.map(i => {
+        if (i.componentType === "ingredient") {
+            const ingredient = ingredients.find(ing => ing.id === i.componentId)
+            return { type: "ingredient", name: ingredient?.name ?? i.componentId, amount: i.amount, unit: i.unit }
+        } else if (i.componentType === "recipe") {
+            const subRecipe = recipes.find(r => r.id === i.componentId)
+            return {
+                type: "mix",
+                name: `Mix: ${i.componentId}`,
+                components: subRecipe ? resolveRecipeInputs(subRecipe, recipes, ingredients, depth + 1, maxDepth) : []
+            }
+        }
+    })
 }

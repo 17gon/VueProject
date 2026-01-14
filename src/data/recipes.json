@@ -67,13 +67,13 @@
         "componentType": "ingredient",
         "componentId": "9c1a0f7e-8d0e-4db6-9eb1-1c8f8e9b77a1",
         "amount": 56.7,
-        "unit": "g"
+        "unit": "ml"
       },
       {
         "componentType": "ingredient",
         "componentId": "7926edc1-47ed-4608-9124-204b8ec1e619",
         "amount": 28.35,
-        "unit": "oz"
+        "unit": "ml"
       },
       {
         "componentType": "ingredient",
@@ -84,16 +84,46 @@
     ]
   },
   {
-    "id": "d7beaf97-3159-44f5-98d0-149ecf0f3fb3",
+    "id": "dcaaf4e9-f5d1-4c16-b28f-0b1e1f7d69d1",
     "name": "White Russian",
-    "instructions": "Prepare a Black Russian in a rocks glass (vodka + coffee liqueur + ice).\nSlowly float heavy cream or milk over the back of a spoon so it rests on top.\nStir lightly before drinking (optional).",
-    "image": "",
+    "instructions": "Black Russian\nHeavy cream or milk – 1 oz",
+    "image": "https://www.liquor.com/thmb/XaemNm2tsS18tTHJYsY_gngs0oo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2017__12__20073201__white-russian-720x720-article-cbe4b9a832c64f8da0bb09407caefa7f.jpg",
     "inputs": [
+      {
+        "componentType": "recipe",
+        "componentId": "6eb17383-20d7-4c1b-b9f8-3f82e4baf26b",
+        "ratioA": 1,
+        "ratioB": 1,
+        "ratioC": 1,
+        "ratioD": 0
+      },
       {
         "componentType": "ingredient",
         "componentId": "00fc1659-c66f-405b-b15e-4a08730ee6c1",
         "amount": 28.35,
-        "unit": "g"
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "id": "395d9fde-5690-4a44-99cc-7b13af6842f1",
+    "name": "Mudslide",
+    "instructions": "White Russian\nIrish cream liqueur (e.g., Baileys) – 1 oz",
+    "image": "https://www.liquor.com/thmb/D-r9i-36EcW2fXH1oBm6tBWdpOQ%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29/Mudslide_Credit_Tim_Nusog_3000x3000_primary-2a2d7f88d817482cb01d177a164f0ec5.jpg",
+    "inputs": [
+      {
+        "componentType": "recipe",
+        "componentId": "dcaaf4e9-f5d1-4c16-b28f-0b1e1f7d69d1",
+        "ratioA": 1,
+        "ratioB": 0,
+        "ratioC": 0,
+        "ratioD": 0
+      },
+      {
+        "componentType": "ingredient",
+        "componentId": "79a9eb67-4d88-47d1-a558-7d9fecb74b32",
+        "amount": 28.35,
+        "unit": "ml"
       }
     ]
   }

@@ -13,20 +13,9 @@ export function createMixInput(): RecipeInput {
     return {
         componentType: "recipe",
         componentId: "",
-        ratioA: 0,
-        ratioB: 0,
-        ratioC: 0,
-        ratioD: 0
+        ratioA: 1,
+        ratioB: 1,
+        ratioC: 1,
+        ratioD: 1
     }
-}
-
-export function resetInput(
-    inputs: RecipeInput[],
-    index: number,
-    type: "ingredient" | "recipe"
-) {
-    inputs[index] =
-        type === "ingredient"
-            ? createIngredientInput()
-            : createMixInput()
 }

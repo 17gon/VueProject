@@ -16,10 +16,18 @@ export default defineComponent({
   <v-app>
     <Header/>
 
-    <v-main>
+    <v-main class="main-content">
       <router-view />
     </v-main>
 
     <Footer />
   </v-app>
 </template>
+
+<style scoped>
+.main-content {
+  padding: 4rem;
+  background: var(--color-background);
+  min-height: calc(100vh - 160px); /* adjust depending on header/footer height */
+}
+</style>

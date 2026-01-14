@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app>
+  <v-app-bar app color="primary" elevate-on-scroll flat>
 
     <v-btn variant="text" to="/" router>Home</v-btn>
     <v-btn variant="text" to="/menu" router>Menu</v-btn>
@@ -8,6 +8,9 @@
     <v-text-field v-model="searchQuery" density="compact" hide-details placeholder="Search" @keyup.enter="onSearch"/>
   </v-app-bar>
 </template>
+
+<style scoped>
+</style>
 
 <script lang="ts">
 import { defineComponent } from "vue";

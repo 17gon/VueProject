@@ -18,7 +18,7 @@ export function convertToMetric(
     }
 
     const metricUnit: IngredientInput["unit"] =
-        ["tsp", "tbsp", "cup"].includes(unit) ? "ml" : "g"
+        ["tsp", "tbsp", "cup", "oz"].includes(unit) ? "ml" : "g"
 
     return {
         value: amount * (CONVERSIONS[unit] ?? 1),

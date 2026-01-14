@@ -25,13 +25,14 @@ export const useRecipeBuilder = defineStore("recipeBuilder", () => {
     )
 
     function buildRecipe(): Recipe {
+        console.table(inputs)
         return {
             id: crypto.randomUUID(),
             name: meta.name.trim(),
             instructions: meta.instructions.trim(),
             image: meta.image.trim(),
             inputs: inputs
-                .filter(i => i.componentId)
+                .filter(i => !!i.componentId)
                 .map(i =>
                     i.componentType === "ingredient"
                         ? (() => {
