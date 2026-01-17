@@ -160,9 +160,8 @@ export default defineComponent({
 </template>
 
 <style scoped>
-/* Row container */
 .recipe-input-row {
-  background-color: #fff8f2; /* subtle warm off-white background */
+  background-color: #fff8f2;
   border-radius: 12px;
   padding: 0.8rem 1rem;
   margin-bottom: 0.8rem;
@@ -170,31 +169,26 @@ export default defineComponent({
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hover lift effect */
 .recipe-input-row:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* Inputs & selects */
 .input-field {
   background-color: #fff;
   border-radius: 8px;
   transition: all 0.2s ease;
 }
 
-/* Focused inputs border accent */
 .input-field .v-input__control:focus-within {
   border-color: var(--color-primary);
 }
 
-/* Text field label */
 .input-field label {
   color: var(--color-primary);
   font-weight: 500;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .recipe-input-row {
     flex-direction: column;

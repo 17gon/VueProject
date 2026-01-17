@@ -1,9 +1,9 @@
 import { defineStore } from "pinia"
 import { reactive, computed } from "vue"
 import { exportAsJson } from "@/functions/Utils.ts"
-import { createIngredientInput } from "@/functions/RecipeInputs"
-import { convertToMetric } from "@/functions/RecipeUnits"
-import type { Recipe, RecipeInput } from "@/functions/Recipe"
+import { createIngredientInput } from "@/functions/RecipeInputs.ts"
+import { convertToMetric } from "@/functions/RecipeUnits.ts"
+import type { Recipe, RecipeInput } from "@/functions/Recipe.ts"
 
 export const useRecipeBuilder = defineStore("recipeBuilder", () => {
     const meta = reactive({

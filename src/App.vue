@@ -28,6 +28,6 @@ export default defineComponent({
 .main-content {
   padding: 4rem;
   background: var(--color-background);
-  min-height: calc(100vh - 160px); /* adjust depending on header/footer height */
+  min-height: calc(100vh - 160px);
 }
 </style>

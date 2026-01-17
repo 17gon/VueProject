@@ -97,32 +97,23 @@ export default defineComponent({
 })
 </script>
 <style scoped>
-/* Container spacing */
 v-container {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
-/* Row spacing */
 v-row {
   gap: 2rem;
 }
-
-/* Image styling */
 v-img {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   object-fit: cover;
 }
-
-/* Recipe title */
 h1 {
   color: var(--color-primary);
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
 }
-
-/* Subtitles (Ingredients / Instructions) */
 h3 {
   color: var(--color-secondary);
   font-size: 1.4rem;
@@ -130,8 +121,6 @@ h3 {
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
-
-/* Paragraph instructions */
 p {
   color: var(--color-text);
   font-size: 1rem;
@@ -139,12 +128,10 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Divider styling */
 v-divider {
-  border-color: #ffd699; /* subtle warm orange */
+  border-color: #ffd699;
 }
 
-/* List styling */
 v-list {
   background-color: var(--color-surface);
   border-radius: 12px;
@@ -158,7 +145,6 @@ v-list-item {
   padding: 0.3rem 0;
 }
 
-/* Recipe not found message */
 div p {
   text-align: center;
   color: var(--color-primary);
@@ -166,7 +152,6 @@ div p {
   margin-top: 3rem;
 }
 
-/* Optional: Responsive adjustments */
 @media (max-width: 768px) {
   v-img {
     height: 200px;

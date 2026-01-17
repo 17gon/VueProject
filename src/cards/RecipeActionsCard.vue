@@ -29,14 +29,13 @@ export default defineComponent({
   }
 });
 </script>
-
 <template>
-  <v-card class="recipe-actions-card">
+  <v-card class="app-card section-spacing">
     <v-card-actions class="actions-row">
       <v-btn
           variant="outlined"
           color="secondary"
-          class="action-btn"
+          class="action-btn secondary"
           @click="exportJson"
       >
         Export JSON
@@ -46,7 +45,7 @@ export default defineComponent({
 
       <v-btn
           color="primary"
-          class="action-btn"
+          class="action-btn primary"
           :disabled="!canSave"
           @click="save"
       >
@@ -57,62 +56,14 @@ export default defineComponent({
 </template>
 
 <style scoped>
-/* Card styling */
-.recipe-actions-card {
-  background-color: var(--color-surface);
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  margin: 1rem 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover effect for card */
-.recipe-actions-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-}
-
-/* Actions row spacing */
 .actions-row {
   padding: 1rem;
   gap: 1rem;
 }
 
-/* Buttons styling */
-.action-btn {
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-/* Primary button hover */
-.action-btn.primary:hover {
-  background-color: var(--color-accent);
-}
-
-/* Secondary button hover */
-.action-btn.secondary:hover {
-  background-color: #ffc187;
-}
-
-/* Disabled button style */
-.action-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .actions-row {
     flex-direction: column;
-    align-items: stretch;
-  }
-  .action-btn {
-    width: 100%;
-    margin-bottom: 0.5rem;
   }
 }
 </style>

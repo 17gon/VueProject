@@ -7,7 +7,7 @@ import { useRecipesStore } from "@/stores/useRecipes"
 export default defineComponent({
   name: "RecipeManagerView",
   components: {
-    RecipeFormCard: defineAsyncComponent(() => import("@/cards/RecipeFormCard.vue")),
+    RecipeFormCard: defineAsyncComponent(() => import("@/cards/RecipeDetailsCard.vue")),
     RecipeInputCard: defineAsyncComponent(() => import("@/cards/RecipeInputCard.vue")),
     RecipeActionsCard: defineAsyncComponent(() => import("@/cards/RecipeActionsCard.vue")),
   },

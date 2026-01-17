@@ -1,4 +1,7 @@
-/* src/assets/styles/main.css */
+@import "./colors.css";
+@import "./component.css";
+@import "./layout.css";
+
 body {
     background-color: var(--color-background);
     color: var(--color-text);
@@ -8,26 +11,4 @@ body {
 a {
     color: var(--color-primary);
     text-decoration: none;
-}
-
-button {
-    background-color: var(--color-primary);
-    color: var(--color-surface);
-    border-radius: 8px;
-    padding: 0.6rem 1.2rem;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: var(--color-accent);
-}
-/* src/assets/styles/colors.css */
-:root {
-    --color-primary: #ff6f3c; /* warm orange for main buttons, highlights */
-    --color-secondary: #ffa85c; /* lighter orange for accents */
-    --color-background: #fff8f2; /* off-white background */
-    --color-surface: #fff; /* card or surface background */
-    --color-text: #3e2e2c; /* dark brown for text */
-    --color-accent: #ffb347; /* highlight accent, hover states */
-    --color-error: #ff4d4f; /* for alerts, errors */
 }

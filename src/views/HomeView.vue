@@ -43,21 +43,4 @@ export default defineComponent({
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
-
-h1 {
-  color: var(--color-primary);
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-h2 {
-  color: var(--color-secondary);
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
-
-p {
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
 </style>

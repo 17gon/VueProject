@@ -5,7 +5,7 @@ import ingredientsRaw from "@/data/ingredients.json"
 import recipesRaw from "@/data/recipes.json"
 import recipeAboutRaw from "@/data/recipe-about.json"
 
-import type {Recipe, RecipeAbout} from "@/functions/Recipe"
+import type {Recipe, RecipeAbout} from "@/functions/Recipe.ts"
 import {exportAsJson, type Ingredient} from "@/functions/Utils.ts";
 
 const ingredients = ingredientsRaw as Ingredient[]

@@ -15,20 +15,12 @@ export const routes: RouteRecordRaw[] = [
     {
         path: "/",
         name: "home",
-        component: () => import("@/views/HomeView.vue"),
-        meta: {
-            layout: "default",
-            title: "Home",
-        },
+        component: () => import("@/views/HomeView.vue")
     },
     {
         path: "/search",
         name: "search",
-        component: () => import("@/views/SearchBarView.vue"),
-        meta: {
-            layout: "default",
-            title: "Search recipes",
-        },
+        component: () => import("@/views/SearchBarView.vue")
     },
     {
         path: "/creator",
